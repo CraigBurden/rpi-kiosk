@@ -6,8 +6,6 @@ services:
       - DISPLAY=:0
       - QT_X11_NO_MITSHM=1
     restart: always
-    links:
-      - project
     stdin_open: true
     tty: true
     privileged: true
@@ -20,7 +18,6 @@ services:
       - DISPLAY=:0
       - QT_X11_NO_MITSHM=1
     links:
-      - project
       - x11
     stdin_open: true
     tty: true
