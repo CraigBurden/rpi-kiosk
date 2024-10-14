@@ -20,7 +20,7 @@ services:
 
   chrome:
     build: ./tools/docker/dockerfiles/chrome/
-    command: chromium --kiosk --no-first-run --touch-events=enabled --fast --fast-start --disable-popup-blocking --disable-infobars --disable-session-crashed-bubble --disable-tab-switcher --disable-translate --enable-low-res-tiling --no-sandbox https://motherboard3:44444
+    command: chromium --kiosk --no-first-run --touch-events=enabled --fast --fast-start --disable-popup-blocking --disable-infobars --disable-session-crashed-bubble --disable-tab-switcher --disable-translate --enable-low-res-tiling --no-sandbox https://motherboard3:4444
     restart: always
     environment:
       - DISPLAY=:0
