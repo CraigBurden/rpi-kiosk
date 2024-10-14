@@ -6,4 +6,4 @@ LOCKFILE=/tmp/.X0-lock
 rm -f /tmp/.X0-lock
 echo "STARTING X11"
 openbox &
-X -s 0 -dpms -nocursor -novtswitch vt2 -background none
+X -s 0 -dpms -novtswitch vt2 -background none
