@@ -8,6 +8,6 @@ RUN sudo apt-get install wget curl
 
 RUN sudo apt-get install ttf-mscorefonts-installer
 
-RUN curl -sSL https://raw.githubusercontent.com/logu/rspi-kiosk/master/tools/install-chromium-browser.sh | bash
+RUN curl -sSL https://raw.githubusercontent.com/CraigBurden/rspi-kiosk/master/tools/install-chromium-browser.sh | bash
 
 USER chromium
