@@ -6,8 +6,6 @@ services:
       - DISPLAY=:0
       - QT_X11_NO_MITSHM=1
     restart: always
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix:rw
     links:
       - project
     stdin_open: true
@@ -21,8 +19,6 @@ services:
     environment:
       - DISPLAY=:0
       - QT_X11_NO_MITSHM=1
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix:rw
     links:
       - project
       - x11
