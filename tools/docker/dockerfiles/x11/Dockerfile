@@ -3,7 +3,7 @@ FROM balenalib/rpi-raspbian:bookworm
 RUN sudo apt-get update
 
 RUN sudo apt-get install --no-install-recommends -y \
-	openbox \
+    menu openbox \
     xserver-xorg \
     xinit \
     xserver-xorg-video-fbdev
