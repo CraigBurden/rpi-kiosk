@@ -7,6 +7,7 @@ services:
       - QT_X11_NO_MITSHM=1
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix # Map X11 socket
+      - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
     restart: always
     stdin_open: true
     tty: true
@@ -21,6 +22,7 @@ services:
       - QT_X11_NO_MITSHM=1
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix # Map X11 socket
+      - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
     links:
       - x11
     stdin_open: true
