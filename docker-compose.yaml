@@ -9,6 +9,7 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix # Map X11 socket
       - /var/run/dbus:/var/run/dbus
       - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
+      - /run/udev/data:/run/udev/data
 
     devices:
       - /dev/dri:/dev/dri  # Ensure the container has access to GPU devices
@@ -31,6 +32,7 @@ services:
       - /var/run/dbus:/var/run/dbus
       - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
       - /dev/input:/dev/input
+      - /run/udev/data:/run/udev/data
     links:
       - x11
     stdin_open: true
