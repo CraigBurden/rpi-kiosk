@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie
+FROM balenalib/rpi-raspbian:bookworm
 
 RUN sudo apt-get update
 

@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie
+FROM balenalib/rpi-raspbian:bookworm
 
 RUN useradd -ms /bin/bash chromium
 
