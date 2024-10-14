@@ -6,7 +6,7 @@ RUN sudo apt-get update
 
 RUN sudo apt-get install wget curl
 
-RUN sudo apt-get install ttf-mscorefonts-installer chromium-browser
+RUN sudo apt-get install ttf-mscorefonts-installer chromium
 
 # RUN curl -sSL https://raw.githubusercontent.com/CraigBurden/rpi-kiosk/master/tools/install-chromium-browser.sh | bash
 
