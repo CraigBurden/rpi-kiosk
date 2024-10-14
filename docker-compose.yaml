@@ -3,7 +3,7 @@ services:
   x11:
     build: ./tools/docker/dockerfiles/x11/
     environment:
-      # - DISPLAY=:0
+      - DISPLAY=:0
       - QT_X11_NO_MITSHM=1
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix # Map X11 socket
@@ -20,11 +20,10 @@ services:
 
   chrome:
     build: ./tools/docker/dockerfiles/chrome/
-    command: printenv DISPLAY
-    # command: chromium --kiosk https://plentify.io --no-first-run --touch-events=enabled --fast --fast-start --disable-popup-blocking --disable-infobars --disable-session-crashed-bubble --disable-tab-switcher --disable-translate --enable-low-res-tiling
+    command: export DISPLAY=:0 && chromium --kiosk https://plentify.io --no-first-run --touch-events=enabled --fast --fast-start --disable-popup-blocking --disable-infobars --disable-session-crashed-bubble --disable-tab-switcher --disable-translate --enable-low-res-tiling
     restart: always
     environment:
-      # - DISPLAY=:0
+      - DISPLAY=:0
       - QT_X11_NO_MITSHM=1
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix # Map X11 socket
