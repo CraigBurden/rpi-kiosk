@@ -8,7 +8,7 @@ RUN sudo apt-get install --no-install-recommends -y \
     xinit \
     xserver-xorg-video-fbdev
 
-COPY x.sh /
+COPY scripts/x.sh /
 
 RUN chmod 700 /x.sh
 
